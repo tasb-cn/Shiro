@@ -1,5 +1,36 @@
 # CHANGELOG
 
+## [1.2.3](https://github.com/Innei/sprightly/compare/v1.2.2...v1.2.3) (2024-10-27)
+
+
+### Bug Fixes
+
+* activity icon position ([8f32bff](https://github.com/Innei/sprightly/commit/8f32bffc4d6d606c50158c83f17af08380fe6fd5))
+* build ([c6ee7f5](https://github.com/Innei/sprightly/commit/c6ee7f56ddb4d3b9352d5933ee649e408156ef0d))
+* **deps:** update all non-major dependencies (minor) ([#475](https://github.com/Innei/sprightly/issues/475)) ([3786f61](https://github.com/Innei/sprightly/commit/3786f611dcba41c9c5ead98ef63c89c98c8722bb))
+* downgrade next ([b71fcb6](https://github.com/Innei/sprightly/commit/b71fcb657763602b0b1a9f6aa1e6b0a4b8e2d674))
+* header auth ([7a3aab6](https://github.com/Innei/sprightly/commit/7a3aab68086ea60585d32bf849f46e1a36412b85))
+* next version ([e8a92d3](https://github.com/Innei/sprightly/commit/e8a92d38274a9a0a8f7a780c27c88c5f52675e3d))
+
+
+
+## [1.2.2](https://github.com/Innei/sprightly/compare/v1.2.1...v1.2.2) (2024-10-10)
+
+
+### Bug Fixes
+
+* build ([0d8b053](https://github.com/Innei/sprightly/commit/0d8b053484ddeed054099de9853bb678fbe554a7))
+* **deps:** update all non-major dependencies ([434a47b](https://github.com/Innei/sprightly/commit/434a47b029aa504a574e4ee90d5e1fce21a511c0))
+* **deps:** update all non-major dependencies ([#467](https://github.com/Innei/sprightly/issues/467)) ([4c96297](https://github.com/Innei/sprightly/commit/4c962978d19bc6fc11f7f58f46399a20ad0cef87))
+* **deps:** update dependency qrcode.react to v4 ([#444](https://github.com/Innei/sprightly/issues/444)) ([a1f96fb](https://github.com/Innei/sprightly/commit/a1f96fb495a80876102c8f3e15ec7bf1a629e81f))
+
+
+### Features
+
+* add music card to LinkCard (netease/tencent) ([#470](https://github.com/Innei/sprightly/issues/470)) ([2165b6a](https://github.com/Innei/sprightly/commit/2165b6a598a6b464bb85fe0a54f87e939f0e8efb))
+
+
+
 ## [1.2.1](https://github.com/Innei/sprightly/compare/v1.2.0...v1.2.1) (2024-10-05)
 
 
