@@ -282,7 +282,7 @@ const fetchGitHubRepoData: FetchObject = {
         title: (
           <span className="flex items-center gap-2">
             <span className="flex-1">{data.name}</span>
-            <span className="shrink-0 self-end justify-self-end">
+            <span className="shrink-0 place-self-end">
               {data.stargazersCount > 0 && (
                 <span className="inline-flex shrink-0 items-center gap-1 self-center text-sm text-orange-400 dark:text-yellow-500">
                   <i className="i-mingcute-star-line" />
@@ -575,10 +575,31 @@ const fetchBangumiData: FetchObject = {
             <span className="text-sm opacity-70">({originalTitle})</span>
           )}
           {type === 'subject' && (
+            <span className="inline-flex shrink-0 items-center gap-3 self-center">
+              <span className="inline-flex shrink-0 items-center gap-1 self-center text-xs text-orange-400 dark:text-yellow-500">
+                <MingcuteStarHalfFill />
+                <span className="font-sans font-medium">
+                  {json.rating.score > 0 && json.rating.score.toFixed(1)}
+                </span>
+              </span>
+              <span className="inline-flex shrink-0 items-center gap-1 self-center text-xs text-orange-400 dark:text-yellow-500">
+                <i className="i-mingcute-star-line" />
+                <span className="font-sans font-medium">
+                  {json.collection &&
+                    json.collection.on_hold +
+                      json.collection.dropped +
+                      json.collection.wish +
+                      json.collection.collect +
+                      json.collection.doing}
+                </span>
+              </span>
+            </span>
+          )}
+          {(type === 'character' || type === 'person') && (
             <span className="inline-flex shrink-0 items-center gap-1 self-center text-xs text-orange-400 dark:text-yellow-500">
-              <MingcuteStarHalfFill />
+              <i className="i-mingcute-star-line" />
               <span className="font-sans font-medium">
-                {json.rating.score > 0 && json.rating.score.toFixed(1)}
+                {json.stat.collects > 0 && json.stat.collects}
               </span>
             </span>
           )}
@@ -640,7 +661,7 @@ const fetchLeetCodeQuestionData: FetchObject = {
               <span className="flex-1">
                 {questionTitleData.translatedTitle}
               </span>
-              <span className="shrink-0 self-end justify-self-end">
+              <span className="shrink-0 place-self-end">
                 {questionTitleData.likes > 0 && (
                   <span className="inline-flex shrink-0 items-center gap-1 self-center text-sm text-orange-400 dark:text-yellow-500">
                     <i className="i-mingcute-thumb-up-line" />
